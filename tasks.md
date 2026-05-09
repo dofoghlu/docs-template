@@ -3,7 +3,7 @@
 ## Backend
 
 **System:** `{{TASK_BACKEND}}`
-Supported: `own-api` | `jira` | `linear` | `github-issues` | `none`
+Supported: `jira` | `linear` | `github-issues` | `custom` | `none`
 
 **Project:** `{{PROJECT_ID}}`
 
@@ -19,7 +19,7 @@ Change type (feat / fix / chore / refactor) → {{label / tag / work type / etc.
 Repo / area                                 → {{label / tag / component / etc.}}
 ```
 
-For known systems (Jira, Linear, GitHub Issues) the agent uses its own knowledge of the API. For a custom API, document the relevant endpoints here.
+For known systems (Jira, Linear, GitHub Issues) the agent uses its own knowledge of the API. For a custom system, document the relevant endpoints here.
 
 ## Task Format
 

@@ -12,7 +12,7 @@ Before creating anything, gather the following. Query the repo first — only pr
 |---|---|---|
 | Repos | Workspace structure, git remotes | Cannot be determined |
 | Default branch | `git symbolic-ref refs/remotes/origin/HEAD` or `git remote show origin` | Cannot be determined |
-| Task system | Cannot be auto-discovered | Always — ask which backend and project ID |
+| Task system | Cannot be auto-discovered | Always — ask which system (jira / linear / github-issues / custom / none) and project ID |
 | Personas | Cannot be auto-discovered | Ask only if the project has multiple user types |
 | Merge strategy | Git config | Cannot be determined |
 
