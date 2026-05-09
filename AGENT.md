@@ -20,6 +20,7 @@ These apply at all times without being asked:
 - Never commit or push directly to the default branch. Always work on a feature branch.
 - Never start implementation without explicit user approval.
 - Never create a branch or write code before a task exists in the task system.
+- Never mark a task done until the PR is merged and the user approves. A commit is not done. A PR is not done. Only a merged PR is done.
 - A question or observation from the user is not permission to implement. Explain the approach and wait for explicit approval before changing any files.
 - When the user asks a question, answer it directly and completely before taking any action.
 - Never make decisions about field names, data models, architecture, or behaviour unilaterally — propose and wait for confirmation.
