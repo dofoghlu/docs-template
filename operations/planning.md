@@ -22,7 +22,7 @@ Wait for the user to approve or adjust. Never write feature docs or create tasks
 
 ## Step 3 — Write or update the feature doc
 
-Only after scope is confirmed, create or update the owning doc in `features/`. Follow the format in `docs-guide.md`.
+Only after scope is confirmed, create or update the owning doc in `features/`. Use `features/_template.md` as the starting point for new docs.
 
 If the feature doc already exists, update it only if the approved behaviour changes. Do not create a duplicate doc for a slice.
 

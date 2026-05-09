@@ -67,7 +67,7 @@ Commit rules:
 
 ## Step 8 — Open a PR
 
-When all acceptance criteria are met, create a PR. Body must include: summary, test results line, test plan checklist, agent attribution line. Use CI as the authority for the full test suite.
+When all acceptance criteria are met, create a PR. Body must include: summary, test results line, test plan checklist, attribution line. Use CI as the authority for the full test suite.
 
 ## Step 9 — Review
 

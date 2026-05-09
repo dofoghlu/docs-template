@@ -28,7 +28,7 @@ Body must include:
 - Summary of what changed and why
 - Test results: command and output summary line
 - Test plan checklist
-- Agent attribution line
+- Attribution line
 
 Use CI as the authority for the full test suite.
 

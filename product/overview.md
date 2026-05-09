@@ -2,6 +2,9 @@
 
 ## What It Is
 
+<!--
+Describe what the project is, who it is for, and what problem it solves. 2-3 sentences.
+-->
 {{PROJECT_DESCRIPTION}}
 
 ## Who It's For
@@ -9,7 +12,7 @@
 Optional. If this project has multiple user types, define them in product/personas.md — not here.
 Reference that file when filling in this section with a one-line summary of who the product serves.
 Feature docs reference personas in their Why section to ground user need precisely.
-Skip this section for single-user projects.
+Delete this section for single-user projects.
 -->
 
 ## Philosophy

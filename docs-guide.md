@@ -10,6 +10,7 @@ How to maintain these docs. Read before creating, moving, or deleting any file.
 ├── tasks.md          — task system configuration
 ├── docs-guide.md     — this file
 ├── product/          — what the project is and how it works
+│   └── personas.md   — user personas (optional, delete if not needed)
 ├── features/         — what each feature does
 └── operations/       — how to do specific things
 ```

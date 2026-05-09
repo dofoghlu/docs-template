@@ -16,19 +16,7 @@ Stable technical patterns for this project. Update only when the architecture fu
 
 ## Key Patterns
 
-Document the patterns agents must follow when writing code.
-
-### Routing
-How routes are defined and where they live.
-
-### Data access
-How the app reads and writes to the database.
-
-### Auth
-How authentication and authorisation work.
-
-### Testing
-What test tooling is used and how tests are structured.
+Document the patterns agents must follow when writing code. Add a subsection for each pattern that is stable and non-obvious. Examples: routing, data access, auth, testing, error handling, background jobs. Delete examples that don't apply.
 
 ## Infrastructure
 

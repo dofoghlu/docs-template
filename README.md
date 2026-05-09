@@ -12,11 +12,12 @@ An AI agent reads `agent-setup.md` to understand how to create a new project doc
 docs-template/
 ├── AGENT.md              — agent entry point: reading order, always-on rules, env vars
 ├── agent-setup.md        — how to create a project docs repo from this template
-├── tasks.md              — task system config (own-api and Jira variants)
+├── tasks.md              — task system config
 ├── docs-guide.md         — documentation maintenance rules
 ├── product/
 │   ├── overview.md       — what the project is
-│   └── architecture.md   — stable technical patterns
+│   ├── architecture.md   — stable technical patterns
+│   └── personas.md       — user personas (optional)
 ├── features/             — one file per durable feature
 └── operations/
     ├── planning.md       — how to plan a feature
