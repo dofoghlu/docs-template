@@ -39,6 +39,10 @@ Refs:
 - Actual file paths to follow as patterns. (optional)
 ```
 
+## Environment Variables
+
+Identify the variables required to connect to this task system and add them to the table in `AGENT.md` under Environment Variables. Configure them in your agent's local config and point the user to where the values need to be entered. Never store values in the docs repo.
+
 ## Rules
 
 - Create tasks only after the user approves the task breakdown.
