@@ -17,7 +17,6 @@ Propose:
 - What the feature does (one paragraph)
 - The first implementation slice, labelled as a slice when narrower than the full capability
 - Which repos are affected
-- What is explicitly out of scope for this slice
 
 Wait for the user to approve or adjust. Never write feature docs or create tasks before scope is confirmed.
 
@@ -32,7 +31,7 @@ If the feature doc already exists, update it only if the approved behaviour chan
 Present the task breakdown to the user. Wait for explicit approval before creating anything.
 
 - One repo touched: one task, no parent.
-- Multiple repos: one parent task (container only) with one subtask per repo, in dependency order (API always first).
+- Multiple repos: one parent task (container only) with one subtask per repo. If an API repo is involved, it always comes first as it defines the contract.
 - Each task must be completable in a single session with clear, verifiable acceptance criteria.
 - Follow the task format in `tasks.md`.
 

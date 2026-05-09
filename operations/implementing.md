@@ -42,7 +42,7 @@ Update the task status to `in-progress` (`tasks.md`).
 ## Step 5 — Create a branch
 
 ```bash
-git checkout master && git pull
+git checkout <default-branch> && git pull
 git checkout -b feat/<slug>
 ```
 
@@ -84,5 +84,5 @@ After the PR is merged and the user approves, update the task status to `done` (
 ## Step 12 — Return to default branch
 
 ```bash
-git checkout master && git pull
+git checkout <default-branch> && git pull
 ```

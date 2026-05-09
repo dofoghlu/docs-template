@@ -12,7 +12,7 @@ Git, branch, commit, and PR conventions.
 
 1. `git status --short --branch` — confirm you are on the default branch or approved task branch.
 2. If there are dirty files unrelated to the current task, stop.
-3. `git pull origin master`
+3. `git pull origin <default-branch>`
 4. `git checkout -b feat/<slug>`
 
 ## Commits
@@ -36,8 +36,4 @@ Use CI as the authority for the full test suite.
 
 - Merge only after the user explicitly approves the PR.
 - `{{MERGE_STRATEGY}}`: squash for `fix/` and `chore/`; merge commit for `feat/`.
-- After merging: `git checkout master && git pull`
-
-## Questions vs Instructions
-
-A question from the user is not permission to implement. Explain the approach and wait for explicit approval before changing any files.
+- After merging: `git checkout <default-branch> && git pull`

@@ -5,12 +5,13 @@ Entry point for all AI agents working in this project. Read this before doing an
 ## Reading Order
 
 1. `product/overview.md` — what this project is and why it exists
-2. `tasks.md` — task system: which backend, how to create and update tasks
-3. `operations/workflow.md` — git, branch, commit, and PR conventions
-4. `operations/planning.md` — how to plan a feature
-5. `operations/implementing.md` — how to implement a task
-6. `docs-guide.md` — how to maintain documentation
-7. Relevant `features/*.md` when working on a specific feature
+2. `product/architecture.md` — technical patterns and repo structure
+3. `tasks.md` — task system: which backend, how to create and update tasks
+4. `operations/workflow.md` — git, branch, commit, and PR conventions
+5. `operations/planning.md` — how to plan a feature
+6. `operations/implementing.md` — how to implement a task
+7. `docs-guide.md` — how to maintain documentation
+8. Relevant `features/*.md` when working on a specific feature
 
 ## Always-On Rules
 
@@ -26,14 +27,12 @@ These apply at all times without being asked:
 
 ## Environment Variables
 
-The following variables must be available in your agent's local config. Never print their values in responses, logs, docs, or task output.
+The following variables must be configured before doing any task system work. Set them up in your agent's config and point the user to where the values need to be entered. Never print values in responses, logs, docs, or task output.
 
 | Variable | Purpose |
 |---|---|
-| `TASK_API_URL` | Base URL for the task system (if using own API) |
-| `TASK_API_KEY` | Auth key for the task system (if using own API) |
 
-Add project-specific variables here as needed.
+Add the variables required by this project's task system here. See `tasks.md` for connection details.
 
 ## Documentation Ownership
 
