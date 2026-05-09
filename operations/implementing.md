@@ -57,6 +57,8 @@ Naming: `feat/<slug>` | `fix/<slug>` | `chore/<slug>` | `refactor/<slug>`
 1. Typecheck or build.
 2. Run existing tests covering the files or feature being changed.
 
+If this task depends on changes in another repo that are not yet merged, verify that the dependency repo is running from the correct branch — not just that its port is alive. A port liveness check cannot catch a branch mismatch. Check the running server's branch and restart from the correct location if it is wrong.
+
 If baseline fails, stop and tell the user.
 
 ## Step 7 — Implement
