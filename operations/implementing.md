@@ -39,7 +39,9 @@ Before writing code:
 
 ## Step 4 — Mark task in-progress
 
-Update the task status to `in-progress` (`tasks.md`).
+Update the task status to `in-progress` using the system in `tasks.md`. Do this before creating a branch or touching any files — not after.
+
+If the task has a parent task, mark the parent `in-progress` at the same time. Never leave a parent at `todo` while a subtask is being worked on.
 
 ## Step 5 — Create a branch
 
@@ -81,7 +83,9 @@ If this task changes behaviour in `features/`, update that doc. Describe current
 
 ## Step 11 — Mark task done
 
-After the PR is merged and the user approves, update the task status to `done` (`tasks.md`).
+After the PR is merged and the user approves, update the task status to `done` using the system in `tasks.md`.
+
+If the task has a parent, check whether all sibling subtasks are now done. If they are, mark the parent `done` as well.
 
 ## Step 12 — Return to default branch
 
