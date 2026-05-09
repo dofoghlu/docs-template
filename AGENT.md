@@ -24,6 +24,7 @@ These apply at all times without being asked:
 - Never make decisions about field names, data models, architecture, or behaviour unilaterally — propose and wait for confirmation.
 - Update `features/` when feature behaviour changes.
 - Keep docs current. Do not preserve outdated structure or planning history.
+- Never commit or push changes in this docs repo without the user reviewing first. Make the changes, show what was changed, and wait for the user to commit.
 
 ## Environment Variables
 
