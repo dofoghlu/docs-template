@@ -32,30 +32,15 @@ How to maintain these docs. Read before creating, moving, or deleting any file.
 
 ## Feature Doc Format
 
-```markdown
----
-status: in-progress | done
----
+Use `features/_template.md` as the starting point for every new feature doc. It contains inline guidance and a review checklist.
 
-# Feature Name
+Three sections, all required:
 
-## What
-What this feature does (current state only — no migration history).
+- **What** — what the feature does in its current state. No history, no implementation detail.
+- **Why** — who needs this and why. Reference a persona from `product/personas.md` if the project defines them.
+- **Examples** — 2-3 concrete real-world examples specific enough to picture exactly how the feature works.
 
-## Why
-The reason this feature exists and the value it provides.
-
-## Examples
-Concrete real-world examples that make the feature easy to understand.
-
-## Scope
-The product behaviours this capability includes.
-
-## Out of scope
-Adjacent behaviours explicitly not included yet.
-```
-
-Feature docs describe product behaviour only. Do not include repo names, file paths, endpoint shapes, data schemas, UI layout detail, or migration history.
+Feature docs describe product behaviour only. Never include repo names, file paths, endpoints, schemas, API detail, UI layout, or migration history.
 
 ## Updating This Guide
 

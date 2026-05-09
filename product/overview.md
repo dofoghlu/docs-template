@@ -4,6 +4,13 @@
 
 {{PROJECT_DESCRIPTION}}
 
+## Who It's For
+<!--
+Optional. If this project has multiple user types, define them here or in a separate product/personas.md.
+Feature docs reference personas in their Why section to ground user need precisely.
+Skip this section for single-user projects.
+-->
+
 ## Philosophy
 
 Key principles that guide how this project is built and what tradeoffs it makes.
