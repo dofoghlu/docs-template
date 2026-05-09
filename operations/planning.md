@@ -37,4 +37,15 @@ Present the task breakdown to the user. Wait for explicit approval before creati
 
 ## Step 5 — Create tasks
 
-Only after the user approves, create tasks using the system in `tasks.md`. Report back with created task IDs and confirm whether feature docs were created, updated, or unchanged.
+Only after the user approves, create tasks using the system in `tasks.md`.
+
+For multi-repo features:
+1. Create the parent task first and note its ID.
+2. Create each subtask linked to that parent ID — never create them as flat top-level tasks.
+3. Verify the parent-child relationship is set before proceeding.
+
+Task title rules:
+- Title is plain text only — e.g. `Add search to task list`.
+- Never prepend type prefixes to the title (`[FEAT]`, `[FIX]`, etc.). The change type is captured as a tag or label per the system defined in `tasks.md`, not in the title.
+
+Report back with created task IDs and confirm whether feature docs were created, updated, or unchanged.
