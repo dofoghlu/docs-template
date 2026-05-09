@@ -10,8 +10,6 @@ Before creating anything, gather the following. Query the repo first — only pr
 
 | Topic | How to discover | Prompt user if |
 |---|---|---|
-| Project name | Repo name, `package.json`, `README` | Cannot be inferred |
-| Description | `README`, `package.json` description | Not found or unclear |
 | Repos | Workspace structure, git remotes | Cannot be determined |
 | Default branch | `git symbolic-ref refs/remotes/origin/HEAD` or `git remote show origin` | Cannot be determined |
 | Task system | Cannot be auto-discovered | Always — ask which backend and project ID |
@@ -24,7 +22,11 @@ Present what you discovered and ask the user to confirm or correct before procee
 
 ## Path A — New project
 
-### 1. Create the repo
+### 1. Name the docs repo
+
+Infer the project name from the workspace or existing repos. Confirm with the user before creating anything. The docs repo should be named `{name}-docs`.
+
+### 2. Create the repo
 
 ```
 {name}-docs/
@@ -43,19 +45,19 @@ Present what you discovered and ask the user to confirm or correct before procee
 
 Add `product/personas.md` if the project has multiple user types.
 
-### 2. Fill in content
+### 3. Fill in content
 
-Copy each file from this template and replace all `{{PLACEHOLDER}}` values using the information gathered in discovery.
+Copy each file from this template and replace all `{{PLACEHOLDER}}` values using the information gathered in discovery. Write `product/overview.md` collaboratively with the user.
 
-### 3. Configure environment variables
+### 4. Configure environment variables
 
 Follow the instructions in `tasks.md` to configure environment variables and point the user to where values need to be entered.
 
-### 4. Set up agent entry file
+### 5. Set up agent entry file
 
 Create an entry file for your agent in the workspace root — the parent folder that contains the docs repo alongside the project's code repos. Point it at `{name}-docs/AGENT.md`. The workspace root is not part of the docs repo.
 
-### 5. Delete this file
+### 6. Delete this file
 
 Remove `agent-setup.md` from the project repo.
 
