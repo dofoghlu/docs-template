@@ -6,7 +6,8 @@
 
 ## Who It's For
 <!--
-Optional. If this project has multiple user types, define them here or in a separate product/personas.md.
+Optional. If this project has multiple user types, define them in product/personas.md — not here.
+Reference that file when filling in this section with a one-line summary of who the product serves.
 Feature docs reference personas in their Why section to ground user need precisely.
 Skip this section for single-user projects.
 -->
