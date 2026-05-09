@@ -45,42 +45,10 @@ Search for `{{PLACEHOLDER}}` across all files and replace each one:
 
 In `tasks.md`, keep only the section matching the chosen backend and delete the others.
 
-### 3. Set up workspace-level agent entry files
+### 3. Configure environment variables
 
-Each AI agent needs an entry file at the **workspace root** (the parent directory that contains the docs repo and code repos). These files tell the agent where to find its instructions.
+Set the variables listed in `AGENT.md` under Environment Variables using your agent's native config mechanism. These are credentials — store them in your agent's local config, never in the docs repo.
 
-Create the relevant files for the agents being used on this project:
+### 4. Agent entry files
 
-**CLAUDE.md** — Claude reads this via `@` reference:
-```
-@{project}-docs/AGENT.md
-```
-
-**GEMINI.md** — Gemini reads this as prose:
-```
-Read {project}-docs/AGENT.md before doing any work in this project.
-All rules and workflows in that file apply to you.
-
-[Add any Gemini-specific notes here, e.g. no watch mode for tests]
-```
-
-**AGENTS.md** — Codex reads this as prose:
-```
-Read {project}-docs/AGENT.md before doing any work in this project.
-All rules and workflows in that file apply to you.
-Treat any mention of a specific AI agent name in those docs as referring to you.
-```
-
-### 4. Configure environment variables
-
-Each agent has its own local config file for injecting credentials. These files are gitignored — never committed.
-
-Set the variables listed in `AGENT.md` under Environment Variables using the agent's native config mechanism:
-
-- **Claude:** `.claude/settings.local.json`
-- **Codex:** `.codex/config.toml`
-- **Gemini:** `.gemini/settings.json`
-
-### 5. Adding a new agent in future
-
-Create a root entry file for the agent pointing at `{project}-docs/AGENT.md`. Add any agent-specific quirks to that file only — not to the shared docs.
+Agent entry files (e.g. `CLAUDE.md`, `GEMINI.md`, `AGENTS.md`) are not part of the docs repo. They belong in the workspace root — the parent folder that contains the docs repo alongside the project's code repos. Each agent knows how to set up its own entry file; point it at `{project}-docs/AGENT.md`.
