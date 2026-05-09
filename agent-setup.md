@@ -6,19 +6,19 @@ Instructions for creating a project docs repo from this template. Follow the rel
 
 ## Step 1 — Discovery
 
-Before creating anything, discuss the following with the user:
+Before creating anything, gather the following. Query the repo first — only prompt the user for what cannot be discovered.
 
-| Topic | What to establish |
-|---|---|
-| Project name | Short name used for the repo (`{name}-docs`) |
-| Description | What the project is and who it's for |
-| Repos | Names and purpose of each code repo in the project |
-| Default branch | `main` or `master` |
-| Task system | Which backend (own-api / jira / linear / github-issues / none) and project ID |
-| Personas | Does the project have multiple distinct user types? |
-| Merge strategy | squash / merge commit / rebase |
+| Topic | How to discover | Prompt user if |
+|---|---|---|
+| Project name | Repo name, `package.json`, `README` | Cannot be inferred |
+| Description | `README`, `package.json` description | Not found or unclear |
+| Repos | Workspace structure, git remotes | Cannot be determined |
+| Default branch | `git symbolic-ref refs/remotes/origin/HEAD` or `git remote show origin` | Cannot be determined |
+| Task system | Cannot be auto-discovered | Always — ask which backend and project ID |
+| Personas | Cannot be auto-discovered | Ask only if the project has multiple user types |
+| Merge strategy | Git config | Cannot be determined |
 
-Do not create any files until the user has confirmed these details.
+Present what you discovered and ask the user to confirm or correct before proceeding. Do not create any files until confirmed.
 
 ---
 
