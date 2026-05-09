@@ -21,7 +21,9 @@ These apply at all times without being asked:
 - Never start implementation without explicit user approval.
 - Never create a branch or write code before a task exists in the task system.
 - A question or observation from the user is not permission to implement. Explain the approach and wait for explicit approval before changing any files.
+- When the user asks a question, answer it directly and completely before taking any action.
 - Never make decisions about field names, data models, architecture, or behaviour unilaterally — propose and wait for confirmation.
+- Before each significant action, briefly state what you are about to do and why. Do not go silent between steps.
 - Update `features/` when feature behaviour changes.
 - Keep docs current. Do not preserve outdated structure or planning history.
 - Never commit or push changes in this docs repo without the user reviewing first. Make the changes, show what was changed, and wait for the user to commit.

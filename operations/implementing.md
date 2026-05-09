@@ -13,6 +13,8 @@ Require an implementation design before starting if any of these are true:
 
 The implementation design must cover: files touched, API contract, data model, auth behaviour, side effects, failure modes, test plan, and what is out of scope. Get user approval before proceeding.
 
+**Exception — planning just concluded:** If implementation follows directly from a completed planning session in the same conversation, the design and approval are already satisfied. Do not re-request approval or re-present the design. Proceed to Step 1.
+
 ## Step 1 — Fetch the task
 
 Read the full task from the task system (`tasks.md`). It must be self-contained.
@@ -22,9 +24,9 @@ Read the full task from the task system (`tasks.md`). It must be self-contained.
 Before creating a branch or editing any files:
 
 1. Run `git status --short --branch`.
-2. If not on the default branch or the approved task branch, stop.
-3. If there are dirty files unrelated to this task, stop.
-4. Show the user and wait for explicit approval before taking any repo action.
+2. If there are dirty files unrelated to this task, stop and show the user.
+3. If on a clean but unrelated branch, switching to the default branch is safe — state what you are doing and proceed. Do not treat a clean branch switch as a blocker.
+4. If the repo state is ambiguous or risky, stop and wait for explicit user approval before taking any action.
 
 ## Step 3 — Existing pattern check
 
